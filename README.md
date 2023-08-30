@@ -1,27 +1,27 @@
-# React + TypeScript + Vite
+# Simple To-Do List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+imple to-do list application using React and TypeScript
 
-Currently, two official plugins are available:
+## Introduction
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This app is to update to-do list items. To develop it, I use React,  TypeScript, Bootstrap and Vite. We generate the app using the command create-vite@latest my-todo-app.
 
-## Expanding the ESLint configuration
+To run the app, the user can use, in the terminal, the command npm run dev.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
 
-- Configure the top-level `parserOptions` property like this:
+Setup your development environment. Install NodeJS and make sure you have node version 16 or higher.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+### Installing
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Create a new React application using Vite:
+ . npx create-vite@latest my-todo-app
+ . cd my-todo-app
+ . npm install
+ . npm run dev
+
+2. Install Bootstrap for easier styling:
+ . npm install bootstrap
+
+3. Then import it in your main.tsx:
+ . import 'bootstrap/dist/css/bootstrap.css'
